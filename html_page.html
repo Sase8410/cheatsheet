@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html en="lang">
+    <head>
+        <title>HTML cheatsheet</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="page">
+            <div id="logo">HTML</div>
+            <div class="box-container">
+                <div class="box">
+                    Body, Head, and Title
+                    <div class="in_box">
+                        <ul>
+                            <li>&lt;body&gt;: everything in this element is shown inside the main browser window.</li>
+                            <li>&lt;head&gt;: contains information about the page.</li>
+                            <li>&lt;title&gt;: shown at the top of the browser.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Text
+                    <div class="in_box">
+                        Structural Markups:
+                        <ul>
+                            <li>&lt;h1&gt;...&lt;h6&gt;: used for main headings, subheadings, so on and so forth.</li>
+                            <li>&lt;p&gt;: creates a paragraph.</li>
+                            <li>&lt;b&gt;: makes characters appear bold.</li>
+                            <li>&lt;i&gt;: makes characters appear italic.</li>
+                            <li>&lt;sup&gt;: superscript.</li>
+                            <li>&lt;sub&gt;: subscript.</li>
+                            <li>&lt;br /&gt;: adds a line break.</li>
+                            <li>&lt;hr /&gt;: adds a horizontal rule between sections.</li>
+                        </ul>
+                        Semantic Markups:
+                        <ul>
+                            <li>&lt;strong&gt;: indicates that its content has strong importance.</li>
+                            <li>&lt;em&gt;: indicates emphasis.</li>
+                            <li>&lt;blockquote&gt;: used for longer quotes that take up an entire paragraph.</li>
+                            <li>&lt;q&gt;: used for shorter quotes that sit within a paragraph.</li>
+                            <li>&lt;abbr&gt;: for abbreviations or acronyms.</li>
+                            <li>&lt;cite&gt;: indicates where the citation is from.</li>
+                            <li>&lt;dfn&gt;: indicates the defining instance of a new term.</li>
+                            <li>&lt;address&gt;: contains contact details for the author of the page.</li>
+                            <li>&lt;ins&gt;: used to show content that has been inserted into a document.</li>
+                            <li>&lt;del&gt;: shows text that has been deleted from it.</li>
+                            <li>&lt;s&gt;: indicates something that is no longer accurate or relevant.</li>
+                        </ul>
+                        Extra Markup:
+                        <ul>
+                            <li>&lt;DOCTYPE html&gt;: tells browser which version of HTML the page is using.</li>
+                            <li>&lt;!-- comment goes here --&gt;: comments.</li>
+                            <li>id="...": id attribute.</li>
+                            <li>class="...": class attribute.</li>
+                            <li>&lt;div&gt;: grouping text & elements in a block.</li>
+                            <li>&lt;span&gt;: grouping text & elements inline.</li>
+                            <li>&lt;iframe&gt;: inline frame.</li>
+                            <li>&lt;header&gt;: appears at the top of the page.</li>
+                            <li>&lt;footer&gt;: appears at the bottom of the page.</li>
+                            <li>&lt;nav&gt;: contains the major navigational blocks on the site.</li>
+                            <li>&lt;article&gt;: a container for any section of a page that could stand alone.</li>
+                            <li>&lt;aside&gt;: either contains information related to the article but not essential to its overall meaning, or contains content that is related to the entire page.</li>
+                            <li>&lt;section&gt;: groups related content together.</li>
+                            <li>&lt;hgroup&gt;: groups together a set of one or more h1 through h6.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Lists
+                    <div class="in_box">
+                        Ordered lists:
+                        <ul>
+                            <li>&lt;ol&gt;: ordered list.</li>
+                            <li>&lt;li&gt;: item list.</li>
+                        </ul>
+                        Unordered lists:
+                        <ul>
+                            <li>&lt;ul&gt;: unordered list.</li>
+                            <li>&lt;li&gt;: item list.</li>
+                        </ul>
+                        Definition lists:
+                        <ul>
+                            <li>&lt;dl&gt;: definition list.</li>
+                            <li>&lt;dt&gt;: contains the term being defined.</li>
+                            <li>&lt;dd&gt;: contains the definition.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Links
+                    <div class="in_box">
+                        Absolute URL
+                        <ul>
+                            <li>link to a different website</li>
+                            <li>&lt;a&gt;: links which has an attribute called <em>href</em></li>
+                            <li>href="...": the page that you want people to go when they click on the link</li>
+                        </ul>
+                        Relative URL 
+                        <ul>
+                            <li>links to other pages within the same site</li>
+                            <li>&lt;a&gt;</li>
+                            <li>href="...".html contains links from a page withing the same site</li>
+                        </ul>
+                        Relative Link Type
+                        <ul>
+                            <li>Same folder: to link to a file in the same folder, just use the file name.</li>
+                            <li>Child folder: use the name of the child folder/then the file name.</li>
+                            <li>Grandchild folder: use the name of the child folder/then the name of the granchild/then the file name.</li>
+                            <li>Parent folder: use ../ to indicate the folder above the current one then follow it with the file name.</li>
+                            <li>Grandparent folder: repeat ../ to indicate you want to go up two folders, then follow it with the file name.</li>
+                        </ul>
+                        Email Links
+                        <ul>
+                            <li>href="mailto:...": creates a link that starts up the user's emial program and addresses an email to a specified email address.</li>
+                        </ul>
+                        Opening new links to a new window
+                        <ul>
+                            <li>target="_blank": opens a new window.</li>
+                        </ul>
+                        Linking to a specific part of the same page
+                        <ul>
+                            <li>href="#idName"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Images
+                    <div class="in_box">
+                        Adding Images
+                        <ul>
+                            <li>&lt;img&gt;: adds an image into the page.</li>
+                            <li>src="...": tells the browser where it can find the image file.</li>
+                            <li>alt="...": provides a text description of the image which describes the image if you cannot see it.</li>
+                            <li>title="...": provides additional information about the image.</li>
+                        </ul>
+                        Figure and Figure Caption:
+                        <ul>
+                            <li>&lt;figure&gt;: contains images and their caption so that the two are associated.</li>
+                            <li>&lt;figcaption&gt;: adds a caption to an image;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Tables
+                    <div class="in_box">
+                        Basic Table Structure:
+                        <ul>
+                            <li>&lt;table&gt;: used to create a table. Contents of the table are written out row by row.</li>
+                            <li>&lt;tr&gt;: indicates the start of each row</li>
+                            <li>&lt;td&gt;: represents each cell of a table.</li>
+                            <li>&lt;th&gt;: represents the heading for either a column or a row.</li>
+                            <ul>
+                                <li>scope="col": indicates a heading for a column.</li>
+                                <li>scope="row": indicates a heading for a row.</li>
+                            </ul>
+                        </ul>
+                        Spanning Columns:
+                        <ul>
+                            <li>colspan="num"</li>
+                        </ul>
+                        Spanning Rows:
+                        <ul>
+                            <li>rowspan="num"</li>
+                        </ul>
+                        Long Tables:
+                        <ul>
+                            <li>&lt;thead&gt;: headings of the table.</li>
+                            <li>&lt;tbody&gt;: body of the table.</li>
+                            <li>&lt;tfoot&gt;: footer of the table.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Forms
+                    <div class="in_box">
+                        Form Structure:
+                        <ul>
+                            <li>&lt;form&gt;: form controls.</li>
+                            <li>action: attribute where its value is the URL for the page on the server that will receive the information in the form when it is submitted.</li>
+                            <li>method="get": the values from the form are added to the end of the URL specified in the action attribute.</li>
+                            <li>method="post": the values are sent in HTTP headers.</li>
+                        </ul>
+                        Text input:
+                        <ul>
+                            <li>&lt;input&gt;: creates several different form controls. The type attribute determines the kind of input.</li>
+                            <li>type="text": creates a single-line text input.</li>
+                            <li>name: the value of this attribute identifies the form control.</li>
+                            <li>maxlength: limits the number of characters a user may enter into the text field.</li>
+                        </ul>
+                        Password input:
+                        <ul>
+                            <li>&lt;input&gt;</li>
+                            <li>type="password": creates a text box that acts just like a single-line text input, except the characters are blocked out. They are hidden.</li>
+                            <li>name, maxlength</li>
+                        </ul>
+                        Text area:
+                        <ul>
+                            <li>&lt;textarea&gt;: creates a multi-line text input.</li>
+                        </ul>
+                        Radio button:
+                        <ul>
+                            <li>&lt;input&gt;</li>
+                            <li></li>
+                            <li>name: generally should be the same for all of the radio buttons used to answer that questions.</li>
+                            <li>value: indicates that value is sent to the server for the selected option</li>
+                            <li>checked: can be used to indicate which value should be selected when the page loads. Only one should use this attribute.</li>
+                        </ul>
+                        Checkbox:
+                        <ul>
+                            <li>&lt;input&gt;</li>
+                            <li>type="checkbox"</li>
+                            <li>name, value, checked</li>
+                        </ul>
+                        Drop Down List Box:
+                        <ul>
+                            <li>&lt;select&gt;: used to create a drop down list box.</li>
+                            <li>name</li>
+                            <li>&lt;option&gt;: used to specify the options that the user can select from.</li>
+                            <li>value</li>
+                            <li>selected: indicate the option that should be selected when the page loads.</li>
+                        </ul>
+                        Multiple select box:
+                        <ul>
+                            <li>&lt;select&gt;</li>
+                            <li>size</li>
+                            <li>multiple: allows user to slect multiple options from the list.</li>
+                        </ul>
+                        File input box:
+                        <ul>
+                            <li>&lt;input&gt;</li>
+                            <li>type="file": creates abox that looks like a text input followed by a browse button.</li>
+                        </ul>
+                        Submit Button:
+                        <ul>
+                            <li>&lt;input&gt;</li>
+                            <li>type="submit": used to send a form to the server.</li>
+                            <li>name, value.</li>
+                        </ul>
+                        Image Button: 
+                        <ul>
+                            <li>&lt;input&gt;</li>
+                            <li>type="image"</li>
+                            <li>src</li>
+                        </ul>
+                        Button: 
+                        <ul>
+                            <li>&lt;button&gt;</li>
+                            <li>type="hidden": form controls are not shown on the page.</li>
+                        </ul>
+                        Labelling form controls:
+                        <ul>
+                            <li>&lt;label&gt;</li>
+                            <li>for: states which form control the label belongs to.</li>
+                        </ul>
+                        Grouping Form Elements:
+                        <ul>
+                            <li>&lt;fieldset&gt;: groups related form controls together.</li>
+                            <li>&lt;legend&gt;: helps identify the purpose of that group of form controls.</li>
+                        </ul>
+                        Date Input: 
+                        <ul>
+                            <li>&lt;input&gt;</li>
+                            <li>type="date"</li>
+                        </ul>
+                        Email & URL Input: 
+                        <ul>
+                            <li>&lt;input&gt;</li>
+                            <li>type="email"</li>
+                            <li>type="url": when you are asking a user for a web page address.</li>
+                        </ul>
+                        Search Input: 
+                        <ul>
+                            <li>&lt;input&gt;</li>
+                            <li>type="search": creates a single line text box for search queries.</li>
+                            <li>placeholder: its value is text that will be shown in the text box until the user clicks in that area.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Flash, Video & Audio
+                    <div class="in_box">
+                        <ul>
+                            <li>&lt;video&gt;: allows you to control video playback.</li>
+                            <li>src</li>
+                            <li>poster: allows you to specify an image to show while the video is downloading.</li>
+                            <li>controls: indicates that the browser should supply its own controls for playback.</li>
+                            <li>autoplay: specifies that the file should play automatically.</li>
+                            <li>loop: indicates that the video should start playing again once it has ended.</li>
+                            <li>preload: tells the browser what to do when the page loads.</li>
+                            <li>none: should not load the video until the user presses play.</li>
+                            <li>auto: should download the video when the page loads.</li>
+                            <li>metadata: collect information such as the size, first frame, track list, and duration.</li>
+                        </ul>
+                        Multiple video sources:
+                        <ul>
+                            <li>&lt;source&gt;: specifies the location of the file to be played.</li>
+                            <li>src, type</li>
+                            <li>codecs: codec that is used to encode the video.</li>
+                        </ul>
+                        Audio:
+                        <ul>
+                            <li>&lt;audio&gt;: includes audio files in your pages.</li>
+                            <li>src</li>
+                            <li>controls, autoplay, preload, loop.</li>
+                        </ul>
+                        Multiple Audio Sources:
+                        <ul>
+                            <li>&lt;source&gt</li>
+                            <li>src, type.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

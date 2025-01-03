@@ -1,0 +1,38 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 80px;
+}
+
+h1{
+    margin: 10px;
+    padding: 10px;
+}
+
+.full-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page1{
+    background-image: url(images/html1.jpg);
+}
+
+.page2{
+    background-image: url(images/css.jpeg);
+}

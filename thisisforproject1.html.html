@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html en="lang">
+    <head>
+        <title>CSS cheatsheet</title>
+        <link rel="stylesheet" href="style.css.css">
+    </head>
+    <body>
+        <div id="page">
+            <div id="logo">CSS</div>
+            <div class="box-container">
+                <div class="box">
+                    <strong>How many ways to apply CSS?</strong>
+                    <div class="in_box">
+                        Trick question, only one <em>correct</em> way: externally baby!
+                        <ul>
+                            <li>link rel="stylesheet" href="styles.css"</li>
+                            <ul>
+                                <li>href: specifies the path to the CSS file</li>
+                                <li>type: specifies the type of document being linked to</li>
+                                <li>rel: specifies the relationship between the HTML page and the file it is linked to</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <strong>Selectors: </strong>
+                    <div class="in_box">
+                        <ul>
+                            <li>Universal: *</li>
+                                <ul><li>Applies to all elements in the document</li></ul>
+                            <li>Type: h1, h2, h3</li>
+                                <ul><li>Matches element names</li></ul>
+                            <li>Class: .className</li>
+                                <ul><li>Matches an element whose <em>class</em> attribute has a value that matches the one specified after the period symbol</li></ul>
+                            <li>ID: #idName</li>
+                                <ul><li>Matches an element whose <em>id</em> attribute has a value that matches one specified after the pound symbol</li></ul>
+                            <li>Child: li>a</li>
+                                <ul><li>Matches an element that is a direct child of another</li></ul>
+                            <li>Descendant: p a</li>
+                                <ul><li>Matches an element that is a descendant of another specified element</li></ul>
+                            <li>Adjacent Sibling Selector: h1+p</li>
+                                <ul><li>Matches an element that is the next sibling of another</li></ul>
+                            <li>General Sibling Selector: h1~p</li>
+                                <ul><li>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</li></ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    CSS Cascade:
+                    <div class="in_box">
+                        <ul>
+                            <li>Last Rule: If the two selectors are identical, the latter of the two will take precedence</li>
+                            <li>Specificity: If one selector is more specific than the others, the more specific rule will tak precedence over more general ones.</li>
+                        </ul>
+                    </div>
+                    Inheritance:
+                    <div class="in_box">
+                        <ul>
+                            <li>You can force a lot of properties to inherit values from their parent elements by using <em>inherit</em> for the value of the properties</li>
+                            <li><em>Example</em> padding: inherit;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Box Model: 
+                    <div class="in_box">
+                        Box Dimensions:
+                        <ul>
+                            <li>width, height: Num 
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="px">px</option>
+                                    <option value="percentage">%</option>
+                                </select>
+                                ;
+                            </li>
+                            <li>min-width, max-width: Num px;</li>
+                            <li>min-height, max-height: Num px;</li>
+                            <li>overflow: 
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="hidden">hidden</option>
+                                    <option value="scroll">scroll</option>
+                                </select>
+                            </li>
+                        </ul>
+                        Parts of the box:
+                        <ol>
+                            <li>Content</li>
+                            <li>Padding: space between the border of a box and any content contained within it
+                                <ul>
+                                    <li>padding: top, right, bottom, left;</li>
+                                </ul>
+                            </li>
+                            <li>Border: separates the edge of one box from another
+                                <ul>
+                                    <li>border-width:
+                                        <select name="referrer" class="drop-down">
+                                            <option value="choose">select a value</option>
+                                            <option value="thin">thin</option>
+                                            <option value="medium">medium</option>
+                                            <option value="thick">thick</option>
+                                        </select>
+                                        <ul>
+                                            <li>
+                                                values appear in clockwise order: top, right, bottom, left using px;
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        border-style:
+                                        <select name="referrer" class="drop-down">
+                                            <option value="choose">select a value</option>
+                                            <option value="solid">solid</option>
+                                            <option value="dotted">dotted</option>
+                                            <option value="dashed">dashed</option>
+                                            <option value="groove">groove</option>
+                                            <option value="ridge">ridge</option>
+                                            <option value="inset">inset</option>
+                                            <option value="outset">outset</option>
+                                            <option value="hidnone">hidden/none</option>
+                                        </select>
+                                        ;
+                                    </li>
+                                    <li>
+                                        border-color:
+                                        <select name="referrer" class="drop-down">
+                                            <option value="choose">select a value</option>
+                                            <option value="RGB">RGB</option>
+                                            <option value="hex">hexadecimal</option>
+                                            <option value="pre">pre-defined colors</option>
+                                        </select>
+                                        ;
+                                    </li>
+                                    <li>
+                                        border: width, style, color of border;
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Margin: sits outside the edge of the border
+                                <ul>
+                                    <li>margin: top, right, bottom, left;</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        Display:
+                        <ul>
+                            <li>display: 
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="inline">inline</option>
+                                    <option value="block">block</option>
+                                    <option value="inline-block">inline-block</option>
+                                    <option value="none">none</option>
+                                </select>
+                                ;
+                            </li>
+                            <li>visibility: 
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="hidden">hidden</option>
+                                    <option value="visible">visible</option>
+                                </select>
+                                ;
+                            </li>
+                            <li>box-shadow: 
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="hor">horizontal offset</option>
+                                    <option value="ver">vertical offset</option>
+                                    <option value="blur">blur distance</option>
+                                    <option value="spread">spread of shadow</option>
+                                </select>
+                            </li>
+                            <li>border-radius: top, right, bottom, left;</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="box">
+                    Styling other parts
+                    <div class="in_box">
+                        List style:
+                        <ul>
+                            <li>Unordered list:
+                                <ul>
+                                    <li>list-style-type:
+                                        <select name="referrer" class="drop-down">
+                                            <option value="choose">select a value</option>
+                                            <option value="none">none</option>
+                                            <option value="disc">disc</option>
+                                            <option value="circle">circle</option>
+                                            <option value="square">square</option>
+                                        </select>
+                                        ;
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Ordered list:
+                                <ul>
+                                    <li>list-style-type:
+                                        <select name="referrer" class="drop-down">
+                                            <option value="choose">select a value</option>
+                                            <option value="decimal">decimal</option>
+                                            <option value="dlz">decimal-leading-zero</option>
+                                            <option value="lower-alpha">lower-alpha</option>
+                                            <option value="upper-alpha">upper-alpha</option>
+                                            <option value="lower-roman">lower-roman</option>
+                                            <option value="upper-roman">upper-roman</option>
+                                        </select>
+                                        ;
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Image:
+                                <ul>
+                                    <li>list-style-image: url("...");</li>
+                                </ul>
+                            </li>
+                            <li>Position:
+                                <ul>
+                                    <li>list-style-position: 
+                                        <select name="referrer" class="drop-down">
+                                            <option value="choose">select a value</option>
+                                            <option value="outside">outside</option>
+                                            <option value="inside">inside</option>
+                                        </select>
+                                        ;
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Shorthand for list style:
+                                <ul><li>list-style: style, image, position;</li></ul>
+                            </li>
+                        </ul>
+                        Table properties:
+                        <ul>
+                            <li>empty-cells: 
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="show">show</option>
+                                    <option value="hide">hide</option>
+                                    <option value="inherit">inherit</option>
+                                </select>
+                                ;
+                            </li>
+                            <li>border-spacing, border-collapse:
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="collapse">collapse</option>
+                                    <option value="separate">separate</option>
+                                </select>
+                                ;
+                            </li>
+                            <li>width, padding, text-transform, letter-spacing, font-size, border-top, border-bottom, text-align, background-color, :hover;</li>
+                        </ul>
+                        Text inputs:
+                        <ul><li>font-size, color, background-color, border, border-radius, :focus, background-image;</li></ul>
+                        Submit buttons:
+                        <ul><li>color, text-shadow, border-bottom, background-color, :hover;</li></ul>
+                        Fieldsets & Legends:
+                        <ul><li>width, color, background-color, border, border-radius, padding;</li></ul>
+                        Cursor styles:
+                        <ul>
+                            <li>cursor:
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="auto">auto</option>
+                                    <option value="crosshair">crosshair</option>
+                                    <option value="default">default</option>
+                                    <option value="pointer">pointer</option>
+                                    <option value="move">move</option>
+                                    <option value="text">text</option>
+                                    <option value="wait">wait</option>
+                                    <option value="help">help</option>
+                                    <option value="url">url("...")</option>
+                                </select>
+                                ;
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Typeface
+                    <div class="in_box">
+                            Font properties
+                            <ul>
+                                <li>font-family: 
+                                    <select name="referrer" class="drop-down">
+                                        <option value="choose">select a value</option>
+                                        <option value="serif">serif</option>
+                                        <option value="sans-serif">sans-serif</option>
+                                        <option value="monospace">monospace</option>
+                                        <option value="cursive">cursive</option>
+                                        <option value="fantasy">fantasy</option>
+                                    </select>
+                                    ;
+                                </li>
+                                <li>font-size: num
+                                    <select name="referrer" class="drop-down">
+                                        <option value="choose">select a value</option>
+                                        <option value="px">px</option>
+                                        <option value="em">em</option>
+                                        <option value="percentage">%</option>
+                                    </select>
+                                    ;
+                                </li>
+                                <li>font-weight: 
+                                    <select name="referrer" class="drop-down">
+                                        <option value="choose">select a value</option>
+                                        <option value="normal">normal</option>
+                                        <option value="bold">bold</option>
+                                    </select>
+                                    ;
+                                </li>
+                                <li>font-style: 
+                                    <select name="referrer" class="drop-down">
+                                        <option value="choose">select a value</option>
+                                        <option value="normal">normal</option>
+                                        <option value="italic">italic</option>
+                                        <option value="oblique">oblique</option>
+                                    </select>
+                                    ;
+                                </li>
+                                <li>line-height: Num em;</li>
+                                <li>text-align: 
+                                    <select name="referrer" class="drop-down">
+                                        <option value="choose">select a value</option>
+                                        <option value="left">left</option>
+                                        <option value="right">right</option>
+                                        <option value="center">center</option>
+                                        <option value="justify">justify</option>
+                                    </select>
+                                    ;
+                                </li>
+                                <li>vertical-align
+                                    <select name="referrer" class="drop-down">
+                                        <option value="choose">select a value</option>
+                                        <option value="text-top">text-top</option>
+                                        <option value="baseline">baseline</option>
+                                        <option value="text-bottom">text-bottom</option>
+                                        <option value="sub">sub</option>
+                                        <option value="super">super</option>
+                                        <option value="top">top</option>
+                                        <option value="middle">middle</option>
+                                        <option value="bottom">bottom</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            Text decorations and transforms
+                            <ul>
+                                <li>text-decoration: 
+                                    <select name="referrer" class="drop-down">
+                                        <option value="choose">select a value</option>
+                                        <option value="none">none</option>
+                                        <option value="underline">underline</option>
+                                        <option value="overline">overline</option>  
+                                        <option value="line-through">line-through</option>
+                                        <option value="blink">blink</option>
+                                    </select>
+                                    ;
+                                </li>
+                                <li>text-transform: 
+                                    <select name="referrer" class="drop-down">
+                                        <option value="choose">select a value</option>
+                                        <option value="uppercase">uppercase</option>
+                                        <option value="lowercase">lowercase</option>
+                                        <option value="capitalize">capitalize</option>
+                                    </select>
+                                    ;
+                                </li>
+                                <li>text-shadow: length, distance, blur, color</li>
+                                <li>text-indent: Num px;</li>
+                                <li>letter-spacing: Num em;</li>
+                                <li>word-spacing: Num em;</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Colors, Backgrounds, and Images:
+                    <div class="in_box">
+                        Colors:
+                        <ul>
+                            <li>color: 
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="rgb">rgb</option>
+                                    <option value="hex">hexadecimal</option>
+                                    <option value="pre">pre-defined colors</option>
+                                </select>    
+                            ;</li>
+                            <li>opacity: 0.0-1.0;</li>
+                        </ul>
+                        Backgrounds:
+                        <ul>
+                            <li>background-color: 
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="rgb">rgb</option>
+                                    <option value="rgba">rgba</option>
+                                    <option value="hsl">hsl</option>
+                                    <option value="hsla">hsla</option>
+                                    <option value="pre">pre-defined colors</option>
+                                    <option value="hex">hexadecimal</option>
+                                </select>
+                                ;
+                            </li>
+                            <li>background-image: url('...');</li>
+                            <li>background-repeat:
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="repeat">repeat</option>
+                                    <option value="repeat-x">repeat-x</option>
+                                    <option value="repeat-y">repeat-y</option>
+                                    <option value="no-repeat">no-repeat</option>
+                                </select>
+                                ;
+                            </li>
+                            <li>background-attachment:
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="fixed">fixed</option>
+                                    <option value="scroll">scroll</option>
+                                </select>
+                                ;
+                            </li>
+                            <li>background-size: 
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="auto">auto(default)</option>
+                                    <option value="cover">cover</option>
+                                    <option value="contain">contain</option>
+                                    <option value="wh">width and height</option>
+                                </select>
+                                ;
+                            </li>
+                            <li>background-position:
+                                <select name="referrer" class="drop-down">
+                                    <option value="choose">select a value</option>
+                                    <option value="left-top">left top</option>
+                                    <option value="left-center">left center</option>
+                                    <option value="left-bottom">left bottom</option>
+                                    <option value="center-top">center top</option>
+                                    <option value="center-center">center center</option>
+                                    <option value="center-bottom">center bottom</option>
+                                    <option value="right-top">right top</option>
+                                    <option value="right-center">right center</option>
+                                    <option value="right-bottom">right bottom</option>
+                                </select> 
+                                ;    
+                            </li>
+                            <li>background: background-color background-image background-repeat background-attachment background-positiion;</li>
+                        </ul>
+                        Images:
+                        <ul>
+                            <li>Control size using width and height.</li>
+                            <li>Align images using float and margin.</li>
+                            <li>Center images using display, margin.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="in_box">
+                        Psuedo-elements:
+                        <ul>
+                            <li>:first-letter: set style for first letter</li>
+                            <li>:first-line: set style for first line</li>
+                            <li>:link: set style for links not yet visited</li>
+                            <li>:visited: set style for links that have been clicked on</li>
+                            <li>:hover: set style when a user hovers over an element</li>
+                            <li>:active: set style for when an element is being activated by a user</li>
+                            <li>:focus: set style when an element has a focus</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Layout
+                    <div class="in-box">
+                        Positioning schemes:
+                        <ul>
+                            <li>Normal flow: Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. (Default)
+                                <ul><li>position: static;</li></ul>
+                            </li>
+                            <li>Relative positioning: Moves an element from the position it would be in normal flow, shifting it to the top, right, bottom, or left of where it would have been placed.
+                                <ul><li>position: relative;<ul><li>To move up or down use top or bottom properties</li><li>To move left or right use left or right properties.</li></ul></li></ul>
+                            </li>
+                            <li>Absolute positioning: This positions the element in relation to its containing element.
+                                <ul><li>position: absolute;</li></ul>
+                            </li>
+                        </ul>
+                        Box offset:
+                        <ul>
+                            <li>Fixed positioning: A form of absolute positioning that positions the element in relation to the browser window.
+                                <ul><li>position: fixed;</li><li>z-index: num;</li></ul>
+                            </li>
+                            <li>Floating elements: Allows you to take that element out of normal flow and position it to the far left or right of a containing box.
+                                <ul>
+                                    <li>float: left, right;</li>
+                                    <li>clear: 
+                                        <select name="referrer" class="drop-down">
+                                            <option value="choose">select a value</option>
+                                            <option value="left">left</option>
+                                            <option value="right">right</option>
+                                            <option value="both">both</option>
+                                            <option value="none">none</option>
+                                        </select>
+                                        ;
+                                    </li>
+                                    <li>To create multi-column layouts use float, width, and margin.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 

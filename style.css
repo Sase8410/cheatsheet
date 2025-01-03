@@ -1,0 +1,96 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 80px;
+    letter-spacing: 0.15em;
+    background-color: whitesmoke;
+}
+
+#page{
+    max-width: auto;
+    min-width: 1000px;
+    margin: 10px auto 25px auto;
+    padding: 20px;
+    border: 4px double ghostwhite;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#logo{
+    width: auto;
+    max-width: none;
+    letter-spacing: normal;
+    border: solid;
+    margin: 10px auto 25px auto;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: lightblue;
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-template-rows: masonry;
+    align-tracks: stretch;
+    max-width: 100%;
+}
+
+.box{
+    grid-row: span 20;
+    flex: 0 0 auto;
+    width: auto;
+    box-sizing: border-box;
+    max-width: auto;
+    max-height: auto;
+    letter-spacing: normal;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(75, 193, 233);
+    background-color: lightcyan;
+    border: 1px double;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover{
+    transform: scale(1.05);
+}
+
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.in_box{
+    width: auto;
+    max-width: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: rgb(75, 193, 233);
+    background-color: lightcyan;
+}
+
+.drop-down{
+    background-color: lightcyan;
+    width: auto;
+    max-width: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} 
+
+.drop-down:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
