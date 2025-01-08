@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html en="lang">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Main</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="page">
+            <div id="logo">Javascript</div>
+            <div class="box-container">
+                <div class="box">
+                    Linking to a javascript file from an html page
+                    <div class="in_box">
+                        &lt;script src="...".js&gt;&lt;/script&gt; 
+                    </div>
+                </div>
+                <div class="box">
+                    Basic Javascript Instruction
+                    <div class="in_box">
+                        Comments
+                        <ul>
+                            <li>Multi-line comments: /*...*/</li>
+                            <li>Single-line comments: //...</li>
+                        </ul>
+                        Variables
+                        <ul>
+                            <li>
+                                <select type="referrer" class="drop-down">
+                                    <option class="choose">select a value</option>
+                                    <option class="num"> numeric</option>
+                                    <option class="str"> string</option>
+                                    <option class="bool"> boolean</option>
+                                </select>
+                            </li>
+                            <li>Rules:
+                                <ul>
+                                    <li>Must begin with a letter, $, or _</li>
+                                    <li>Can contain letters, numbers, $, or _</li>
+                                    <li>Case-sensitive</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Array
+                        <ul>
+                            <li>Creating via array literal
+                                <ul>
+                                    <li>var array_name = [value1, value2, ...];</li>
+                                </ul>
+                            </li>
+                            <li>Array constructor
+                                <ul>
+                                    <li>var array_name = new Array(value1, value2, ...);</li>
+                                </ul>
+                            </li>
+                            <li>Accessing: array_name[index]</li>
+                            <li>Index values start at 0</li>
+                            <li>Changing values in an array: 
+                                <ul>
+                                    <li>array_name[index] = new_value;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Arithmetic Operators
+                        <ul>
+                            <li>+, -, *, /, %, ++, --</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Functions, Method & Objects
+                    <div class="in_box">
+                        Functions
+                        <ul>
+                            <li>Creating a function
+                                <ul>
+                                    <li>function function_name() {</li>
+                                    <li>...}</li>
+                                </ul>
+                            </li>
+                            <li>Calling a function
+                                <ul>
+                                    <li>function_name();</li>
+                                </ul>
+                            </li>
+                            <li>Immediately invoked function expression
+                                <ul>
+                                    <li>(function() {</li>
+                                    <li>...})();</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Method
+                        <ul>
+                            <li>Creating a method
+                                <ul>
+                                    <li>object_name.method_name = function() {</li>
+                                    <li>...}</li>
+                                </ul>
+                            </li>
+                            <li>Calling a method
+                                <ul>
+                                    <li>object_name.method_name();</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Objects
+                        <ul>
+                            <li>Creating an object
+                                <ul>
+                                    <li>var object_name = {property1: value1, property2: value2, ...};</li>
+                                    <li>Constructor:
+                                        <ul>
+                                            <li>function object_name() {</li>
+                                            <li>this.property1 = value1;</li>
+                                            <li>this.property2 = value2;</li>
+                                            <li>...}</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Accessing properties
+                                <ul>
+                                    <li>object_name.property_name</li>
+                                </ul>
+                            </li>
+                            <li>Updating an object
+                                <ul>
+                                    <li>object_name.property_name = new_value;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        This
+                        <ul>
+                            <li>Refers to the object that is currently executing the function</li>
+                        </ul>
+                        Browser Object Model: The Window Object
+                        <ul>
+                            <li>Property:
+                                <ul>
+                                    <li>window.innerHeight: Height of window in pixels</li>
+                                    <li>window.innerWidth: Width of window in pixels</li>
+                                    <li>window.pageXOffset: Distance document has been scrolled horizontally in pixels</li>
+                                    <li>window.pageYOffset: Distance document has been scrolled vertically in pixels</li>
+                                    <li>window.sceenX: X-coordinate of pointer relative to top left corner of screen in pixels</li>
+                                    <li>window.screenY: Y-coordinate of pointer relative to top left corner of screen in pixels</li>
+                                    <li>window.location: Current URL of window object</li>
+                                    <li>window.document: Reference to document object, which is used to represent the current page contained in window</li>
+                                    <li>window.history: History of window object</li>
+                                    <li>window.history.length: Number of items in history object for browser window or tab</li>
+                                    <li>window.screen: Reference to screen object</li>
+                                    <li>window.screen.width: Finds value of its width property in pixels</li>
+                                    <li>window.screen.height: Finds value of its height property in pixels</li>
+                                </ul>
+                            </li>
+                            <li>Method:
+                                <ul>
+                                    <li>window.alert(): Create dialog box with message</li>
+                                    <li>window.open(): Opens new browser window with URL specified as parameter</li>
+                                    <li>window.print(): Tells browser that user wants to print contents of current page.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Document Object Model: The Document Object
+                        <ul>
+                            <li>Property:
+                                <ul>
+                                    <li>document.title: Title of current document</li>
+                                    <li>document.lastModified: Date on which document was last modified</li>
+                                    <li>document.URL: Returns string containing URL of current document</li>
+                                    <li>document.domain: Returns domain of current document</li>
+                                </ul>
+                            </li>
+                            <li>Method:
+                                <ul>
+                                    <li>document.write(): Writes text to document</li>
+                                    <li>document.getElementByID(): Returns element, if there is an element with the value of the id attribute that matches</li>
+                                    <li>document.querySelectorAll(): Returns list of elements that match a CSS selector, which is specified as a parameter</li>
+                                    <li>document.createElement(): Creates a new element</li>
+                                    <li>document.createTextNode(): Creates new text node</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Global Objects: String Object
+                        <ul>
+                            <li>Property:
+                                <ul>
+                                    <li>length: Returns number of characters in the string in most cases</li>
+                                </ul>
+                            </li>
+                            <li>Method:
+                                <ul>
+                                    <li>toUpperCase(): Changes string to uppercase characters</li>
+                                    <li>toLowerCase(): Changes string to lowercase characters</li>
+                                    <li>charAt(): Takes an index number as a parameter, and returns the character found at that position</li>
+                                    <li>indexOf(): Returns index number of the first time a character or set of characters is found within the string</li>
+                                    <li>lastIndexOf(): Returns index number of the last time a character or set of characters is found within the string</li>
+                                    <li>substring(): Returns characters found between two index numbers where the character for the first index number is included and the character for the last index number is not included</li>
+                                    <li>split(): When a character is specified, it splits the string each time it is found, then stores each individual part in an array</li>
+                                    <li>trim(): Removes whitespace from start and end of string</li>
+                                    <li>replace(): Like find and replace, it takes one value that should be found, and another to replace it</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Global Objects: Number Object
+                        <ul>
+                            <li>Method:
+                                <ul>
+                                    <li>isNaN(): Checks if the value is not a number</li>
+                                    <li>toFixed(): Rounds to specified number of decimal places</li>
+                                    <li>toPrecision(): Rounds to total number of places</li>
+                                    <li>toExponential(): Returns a string representing the number in exponential notation</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Global Objects: Math Object
+                        <ul>
+                            <li>Property:
+                                <ul>
+                                    <li>Math.PI: returns pi</li>
+                                </ul>
+                            </li>
+                            <li>Method:
+                                <ul>
+                                    <li>Math.round(): Rounds number to the nearest integer</li>
+                                    <li>Math.sqrt(n): Rounds square root of positive number</li>
+                                    <li>Math.ceil(): Rounds number up to the nearest integer</li>
+                                    <li>Math.floor(): Rounds number down to the nearest integer</li>
+                                    <li>Math.random(): Generates a random number between 0 and 1</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Global Objects: Date Object (And Time)
+                        <ul>
+                            <li>Method:
+                                <ul>
+                                    <li>getDate()/setDate(): Returns/sets the day of the month(1-31)</li>
+                                    <li>getDay(): Returns the day of the week(0-6)</li>
+                                    <li>getFullYear()/setFullYear(): Returns/sets the year(4 digits)</li>
+                                    <li>getHours()/setHours(): Returns/sets the hour(0-23)</li>
+                                    <li>getMinutes()/setMinutes(): Returns/sets the minute(0-59)</li>
+                                    <li>getMonth()/setMonth(): Returns/sets the month(0-11)</li>
+                                    <li>getSeconds()/setSeconds(): Returns/sets the second(0-59)</li>
+                                    <li>getTime()/setTime(): Returns/sets the number of milliseconds since January 1, 1970</li>
+                                    <li>getMilliseconds()/setMilliseconds(): Returns/sets the milliseconds(0-999)</li>
+                                    <li>getTimezoneOffset(): Returns time zone offset in mins for locale</li>
+                                    <li>toDateString(): Returns date as a human-readable string</li>
+                                    <li>toTimeString(): Returns time as a human-readable string</li>
+                                    <li>toString(): Returns a string representing the specified date</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Decisions & Loops
+                    <div class="in_box">
+                        If...Else Statements
+                        <ul>
+                            <li>if(){...}</li>
+                            <li>else{...}</li>
+                        </ul>
+                        Switch Statement
+                        <ul>
+                            <li>switch(...){
+                                <ul>
+                                    <li>case ...:</li>
+                                    <li>break;</li>
+                                    <li>default:</li>
+                                    <li>break;</li>
+                                </ul>
+                            }</li>
+                            </li>
+                        </ul>
+                        For Loop 
+                        <ul>
+                            <li>for(initialization; condition; increment){...}</li>
+                        </ul>
+                        While Loop
+                        <ul>
+                            <li>while(condition){...}</li>
+                        </ul>
+                        Do...While Loop
+                        <ul>
+                            <li>do{...}while(condition);</li>
+                        </ul>
+                        Break & Continue
+                        <ul>
+                            <li>break: Exits loop</li>
+                            <li>continue: Skips iteration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Document Object Model 
+                    <div class="in_box">
+                        Document Object Model
+                        <ul>
+                            <li>Represents structure of a document</li>
+                            <li>Tree-like structure</li>
+                            <li>Consists of nodes</li>
+                            <li>Nodes can be:
+                                <ul>
+                                    <li>Element nodes</li>
+                                    <li>Attribute nodes</li>
+                                    <li>Text nodes</li>
+                                    <li>Comment nodes</li>
+                                    <li>Document nodes</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Accessing Elements
+                        <ul>
+                            <li>getElementById(): Returns element with specified id</li>
+                            <li>getElementsByTagName(): Returns collection of elements with specified tag name</li>
+                            <li>getElementsByClassName(): Returns collection of elements with specified class name</li>
+                            <li>querySelector(): Returns first element that matches a specified CSS selector</li>
+                            <li>querySelectorAll(): Returns all elements that match a specified CSS selector</li>
+                        </ul>
+                        Manipulating Elements
+                        <ul>
+                            <li>innerHTML: Content of element</li>
+                            <li>textContent: Text content of element</li>
+                            <li>setAttribute(): Sets attribute of element</li>
+                            <li>removeAttribute(): Removes attribute of element</li>
+                            <li>appendChild(): Adds new child element to parent element</li>
+                            <li>removeChild(): Removes child element from parent element</li>
+                            <li>replaceChild(): Replaces child element with new child element</li>
+                        </ul>
+                        Event Listeners
+                        <ul>
+                            <li>addEventListener(): Attaches event handler to specified element</li>
+                            <li>removeEventListener(): Removes event handler from specified element</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    Events
+                    <div class="in_box">
+                        Types of Events 
+                        <ul>
+                            <li>UI Events
+                                <ul>
+                                    <li>load: Web page has finished loading</li>
+                                    <li>unload: Web page is unloading</li>
+                                    <li>error: Browser encounters a JavaScript error or an asset doesn't exist</li>
+                                    <li>resize: Browser window has been resized</li>
+                                    <li>scroll: User has scrolled up or downt the page</li>
+                                </ul>
+                            </li>
+                            <li>Keyboard Events
+                                <ul>
+                                    <li>keydown: User first presses a key</li>
+                                    <li>keyup: User releases a key</li>
+                                    <li>keypress: Character is being inserted</li>
+                                </ul>
+                            </li>
+                            <li>Mouse Events
+                                <ul>
+                                    <li>click: User presses and releases a button over the same element</li>
+                                    <li>dblclick: User presses and releases a button twice over the same element</li>
+                                    <li>mousedown: User presses a mouse button while over an element</li>
+                                    <li>mouseup: User releases a mouse button while over an element</li>
+                                    <li>mousemove: User moves the mouse</li>
+                                    <li>mouseover: User moves the mouse over an element</li>
+                                    <li>mouseout: User moves the mouse off an element</li>
+                                </ul>
+                            </li>
+                            <li>Focus Events
+                                <ul>
+                                    <li>focus/focusin: Element gains focus</li>
+                                    <li>blur/focusout: Element loses focus</li>
+                                </ul>
+                            </li>
+                            <li>Form Events
+                                <ul>
+                                    <li>input: Value in &lt;input&gt; or &lt;textarea&gt; element has changed or any elemnt with the conteteditable attribute</li>
+                                    <li>change: Value in select box, checkbox, or radio button changes</li>
+                                    <li>submit: User submits a form</li>
+                                    <li>reset: User clicks on a form's reset button</li>
+                                    <li>cut: User cuts content from a form field</li>
+                                    <li>copy: User copies content from a form field</li>
+                                    <li>paste: User pastes content into a form field</li>
+                                    <li>select: User selects some text in a form field</li>
+                                </ul>
+                            </li>
+                            <li>Mutation Events
+                                <ul>
+                                    <li>DOMSubtreeModified: Change has been made to document</li>
+                                    <li>DOMNodeInserted: Node has been inserted as a direct child of another node</li>
+                                    <li>DOMNodeRemoved: Node has been removed from another node</li>
+                                    <li>DOMNodeInsertedIntoDocument: Node has been inserted as a descendant of another node</li>
+                                    <li>DOMNodeRemovedFromDocument: Node has been removed as a descendant of another node</li>
+                                </ul>
+                            </li>
+                            <li>Traditional Dom Event Handlers
+                                <ul>
+                                    <li>element.onevent = functionName;
+                                        <ul>
+                                            <li>element: DOM element node to target</li>
+                                            <li>event: event bound to node(s) preceded by word "on"</li>
+                                            <li>code: name of function to call</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Event Listeners
+                                <ul>
+                                    <li>element.addEventListener('event', functionName, Boolean);
+                                        <ul>
+                                            <li>element: DOM element node to target</li>
+                                            <li>event: event to bind node(s) to in quote marks</li>
+                                            <li>code: name of function to call</li>
+                                            <li>event flow: indicates something called capture, and is usually set to false</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Event Flow
+                                <ul>
+                                    <li>Capture: Event starts from top of DOM tree and moves down</li>
+                                    <li>Bubbling: Event starts from target element and moves up</li>
+                                </ul>
+                            </li>
+                            <li>Event Object
+                                <ul>
+                                    <li>Property:
+                                        <ul>
+                                            <li>target: The target of the event</li>
+                                            <li>type: Type of event that was fired</li>
+                                            <li>cancelable: Wehther you can cancel the default behavior of an element</li>
+                                        </ul>
+                                    </li>
+                                    <li>Method:
+                                        <ul>
+                                            <li>preventDefault(): Cancel default behavior of the event</li>
+                                            <li>stopPropagation(): Stops the event from bubbling or capturing any further</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Event Delegation:
+                                <ul>
+                                    <li>Attaching event listener to parent element</li>
+                                    <li>Event listener analyzes bubbled events to find target</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
